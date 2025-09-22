@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/kirupa/Desktop/College/Programs/C/C files/sample'
+binary-path:     '/Users/kirupa/Desktop/college/Programs/C/C files/sample'
 relocations:     []
 ...
