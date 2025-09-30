@@ -1,16 +1,27 @@
-//Profit calculator
-#include<stdio.h>
-int main()
+#include <stdio.h>
+
+int main() 
 {
-    int costprice;
-    int sellingprice;
-    int profit;
-    printf("Enter the cost price:");
-    scanf("%d",&costprice);
-    printf("Enter the selling price");
-    scanf("%d",&sellingprice);
-    profit=sellingprice-costprice;
-    printf("Profit is : %d",profit);
-    return 0;
+    float costPrice, sellingPrice, profit, loss;
+
+    printf("Enter Cost Price : ");
+    scanf("%f", &costPrice);
+
+    printf("Enter Selling Price : ");
+    scanf("%f", &sellingPrice);
+
     
+    if (sellingPrice > costPrice) {
+        profit = sellingPrice - costPrice;
+        printf("\n--- Result ---\n");
+        printf("Profit = %f\n", profit);
+    } 
+    else if  (costPrice > sellingPrice) {
+        loss = costPrice - sellingPrice;
+        printf("\n--- Result ---\n");
+        printf("Loss = %f\n", loss);
+    
+    }
+
+    return 0;
 }

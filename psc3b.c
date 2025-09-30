@@ -1,16 +1,20 @@
-#include<stdio.h>
-#define p printf
-#define s scanf
+
+#include <stdio.h>
+
 int main()
-{
-    int divisor,dividend,quotient,remainder;
-    p("Enter the divisor:");
-    s("%d",&divisor);
-    p("Enter the dividend:");
-    s("%d",&dividend);
-    quotient=dividend/divisor;
-    remainder=dividend%divisor;
-    p("Quotient is : %d\n",quotient);
-    p("Remainder is : %d",remainder);
+ {
+    int dividend, divisor;
+    int quotient, remainder;
+    printf("Enter dividend: ");
+    scanf("%d", &dividend);
+    printf("Enter divisor: ");
+    scanf("%d", &divisor);
+    quotient = dividend / divisor;
+    remainder = dividend % divisor;
+
+    printf("\n--- Result ---\n");
+    printf("Quotient : %d\n", quotient);
+    printf("Remainder: %d\n", remainder);
+
     return 0;
 }

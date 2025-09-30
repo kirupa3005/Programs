@@ -1,4 +1,4 @@
-//Program to convert the temperature from centigrade to fahrenheit
+
 #include<stdio.h>
 int main()
 {
