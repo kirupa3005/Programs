@@ -1,34 +1,29 @@
 #include <stdio.h>
 
 int main() {
-    int marks;
+    char item[50];
+    int quantity;
+    float price, total;
 
-    printf("Enter your marks (0-100): ");
-    scanf("%d", &marks);
+    // Get input from user
+    printf("Enter Food Item: ");
+    scanf("%s", item);
 
-    if (marks >= 90 && marks <= 100) {
-        printf("Grade: A\n");
-    } 
-    else if (marks >= 80 && marks < 90) {
-        printf("Grade: B\n");
-    } 
-    else if (marks >= 70 && marks < 80) {
-        printf("Grade: C\n");
-    } 
-    else if (marks >= 60 && marks < 70) {
-        printf("Grade: D\n");
-    } 
-    else if (marks >= 50 && marks < 60) {
-        printf("Grade: E\n");
-    } 
-    else if (marks >= 0 && marks < 50) {
-        printf("Grade: F (Fail)\n");
-    } 
-    else
-    {
-        printf("Invalid marks entered!\n");
+    printf("Enter Quantity: ");
+    scanf("%d", &quantity);
 
-    }
+    printf("Enter Price per Item: ");
+    scanf("%f", &price);
+
+    // Calculate total
+    total = quantity * price;
+
+    // Display the bill
+    printf("\nBill Details:\n");
+    printf("Item: %s\n", item);
+    printf("Quantity: %d\n", quantity);
+    printf("Price per Item: %.2f\n", price);
+    printf("Total Amount = %.2f\n", total);
 
     return 0;
 }
