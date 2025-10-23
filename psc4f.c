@@ -30,7 +30,7 @@ int main() {
     }
     else {
         printf("Invalid operator! Please use +, -, *, or /.\n");
-    }
+    
 
     return 0;
 }
